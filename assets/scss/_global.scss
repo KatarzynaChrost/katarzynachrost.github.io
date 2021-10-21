@@ -20,4 +20,7 @@
     height: 170px;
     position: relative;
     z-index: -10;
+    @media only screen and (max-width:824px) {
+      height: 120px;
+    }
   }

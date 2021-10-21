@@ -9,13 +9,16 @@
   background: linear-gradient(90deg,
       map-get($colors, secondary) 0%,
       map-get($colors, secondary-dark) 90%);
-  height: 120px;
+  height: 100px;
   top: 0;
   left: 0;
   overflow: hidden;
   transition: all 300ms ease;
   filter: none;
   z-index: 100;
+  @media only screen and (max-width: 400px) {
+    height: 70px;
+  }
 
   &_logo {
     font-size: 65px;
@@ -26,7 +29,9 @@
     transition: all 0.3s;
     display: flex;
     align-items: center;
-
+    @media only screen and (max-width: 400px) {
+      font-size: 55px;
+    }
     &:hover {
       color: map-get($colors, primary-dark);
     }
@@ -90,10 +95,13 @@
     width: 40px;
     height: 33px;
     position: relative;
-    top: 45px;
-    right: 45px;
+    top: 33px;
+    right: 33px;
     cursor: pointer;
-
+    @media only screen and (max-width: 400px) {
+      top: 20px;
+      right: 20px;
+    }
     @media only screen and (min-width: 871px) {
       display: none;
     }
