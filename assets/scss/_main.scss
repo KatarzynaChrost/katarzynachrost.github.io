@@ -1,0 +1,126 @@
+
+.c-main {
+    position: relative;
+    background-image: url("assets/img/svg/blob.svg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: calc(50% + 360px) 59%;
+    width: 100%;
+    height: 650px;
+    @media only screen and (max-width: 840px) {
+      background-position: calc(50% + 381px) 41%;
+      height: 750px;
+    }
+  
+    &_my_photo {
+      background-image: url("assets/img/my_photo.jpg");
+      clip-path: circle(31.5% at 50% 36%);
+      width: 360px;
+      height: 722px;
+      background-size: cover;
+      position: absolute;
+      top: 170px;
+      right: 25%;
+      @media only screen and (min-width: 1550px) {
+        right: calc(50% - 240px);
+      }
+      @media only screen and (max-width: 990px) {
+        right: calc(50% - 350px);
+      }
+      @media only screen and (max-width: 840px) {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 330px;
+        height: 662px;
+        top: 380px;
+      }
+      @media only screen and (max-width: 550px) {
+        width: 280px;
+        height: 560px;
+        top: 400px;
+      }
+    }
+  
+    &_card {
+      position: relative;
+      left: 10%;
+      top: 80px;
+      width: fit-content;
+      max-width: 100%;
+  
+      @media only screen and (max-width: 840px) {
+        text-align: center;
+        margin: auto;
+        left: 0;
+        right: 0;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+  
+      &_t {
+        max-width: 90%;
+        &_name {
+          line-height: 80px;
+          margin-bottom: 0;
+          @media only screen and (max-width: 418px) {
+            font-size: 52px;
+            margin-top: 0;
+          }
+        }
+        &_profession {
+          padding: 0;
+          font-size: 24px;
+        }
+      }
+    }
+    &_btn {
+      background-color: map-get($colors, accent-light);
+      width: fit-content;
+      border-radius: 50px;
+      border-end-start-radius: 0;
+      color: map-get($colors, secondary);
+      cursor: pointer;
+      font-weight: 600;
+      border: 3px solid map-get($colors, primary-dark);
+      box-shadow: 0px 0px 15px 0px rgba(200, 200, 200, 0);
+      letter-spacing: 1px;
+      transition: background-color 450ms, box-shadow 450ms;
+  
+      a{
+        transition: color 450ms;
+        color: map-get($colors, secondary);
+        display: block;
+        padding: 10px 20px;
+      }
+
+      .icon-down-open::before{
+        transform: rotateY(0);
+        transition:color 450ms, transform 450ms;
+        color: map-get($colors, secondary);
+      }
+  
+      &:hover {
+        background-color: map-get($colors, primary-dark);
+        box-shadow: 0px 0px 15px 0px rgba(200, 200, 200, 0.411);
+        a{
+          color: map-get($colors, accent-light);
+        }
+        .icon-down-open::before{
+          transform: rotateY(180deg);
+          color: map-get($colors, accent-light);
+        }
+      }
+  
+      @media only screen and (max-width: 840px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+    }
+  }
+  

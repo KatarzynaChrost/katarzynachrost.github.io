@@ -1,0 +1,228 @@
+.c-nav {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 25px;
+  width: 100%;
+  background: linear-gradient(90deg,
+      map-get($colors, secondary) 0%,
+      map-get($colors, secondary-dark) 90%);
+  height: 120px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 300ms ease;
+  filter: none;
+  z-index: 100;
+
+  &_logo {
+    font-size: 65px;
+    color: map-get($colors, accent-light);
+    margin: 10px 40px;
+    font-family: "Courgette", cursive;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: map-get($colors, primary-dark);
+    }
+  }
+
+  &_list {
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-right: 20px;
+
+    li {
+      color: map-get($colors, accent-light);
+      padding: 35px 25px;
+      position: relative;
+      font-weight: 300;
+      font-size: 23px;
+
+      @media only screen and (max-width: 820px) {
+        padding: 35px 15px;
+      }
+
+      @media only screen and (max-width: 870px) {
+        display: none;
+      }
+
+      a {
+        position: relative;
+        transition: all 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          color: map-get($colors, primary-dark);
+        }
+
+        &::before {
+          content: "";
+          background-color: map-get($colors, primary-dark);
+          bottom: -5px;
+          position: absolute;
+          width: 0px;
+          height: 1px;
+          display: block;
+          transition: width 0.5s cubic-bezier(0.77, -0.04, 0.29, 1.4);
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &_burger {
+    z-index: 110;
+    content: "";
+    width: 40px;
+    height: 33px;
+    position: relative;
+    top: 45px;
+    right: 45px;
+    cursor: pointer;
+
+    @media only screen and (min-width: 871px) {
+      display: none;
+    }
+
+    &_base {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdj+P/10X8ACaMD1sUSnYsAAAAASUVORK5CYII=);
+      display: inline-block;
+      width: 40px;
+      height: 3px;
+      position: absolute;
+      top: 15px;
+
+      &::before {
+        background-color: map-get($colors, accent-light);
+        content: "";
+        width: 40px;
+        height: 3px;
+        bottom: 12px;
+        position: absolute;
+      }
+
+      &::after {
+        background-color: map-get($colors, accent-light);
+        content: "";
+        width: 40px;
+        height: 3px;
+        top: 12px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.sidenav {
+  position: fixed;
+  background-color: map-get($colors, accent);
+  border-left: 8px dotted map-get($colors, accent-light);
+  right: 0;
+  height: 100%;
+  width: 80%;
+  z-index: 110;
+  padding-top: 80px;
+  transition: all 300ms ease;
+  display: none ;
+
+  &_list {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+
+    li {
+      color: map-get($colors, accent-light);
+      padding: 35px 25px;
+      position: relative;
+      font-weight: 300;
+      font-size: 23px;
+
+      a {
+        position: relative;
+        transition: all 0.3s;
+        display: block;
+
+        &:hover {
+          cursor: pointer;
+          color: map-get($colors, primary-dark);
+        }
+
+        &::before {
+          content: "";
+          background-color: map-get($colors, primary-dark);
+          bottom: -5px;
+          position: absolute;
+          width: 0px;
+          height: 1px;
+          display: block;
+          transition: width 0.5s cubic-bezier(0.77, -0.04, 0.29, 1.4);
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &_close {
+    z-index: 110;
+    content: "";
+    width: 40px;
+    height: 33px;
+    position: fixed;
+    top: 45px;
+    right: 45px;
+    cursor: pointer;
+
+    &_base {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdj+P/10X8ACaMD1sUSnYsAAAAASUVORK5CYII=);
+      display: inline-block;
+      width: 40px;
+      height: 3px;
+      position: absolute;
+      top: 15px;
+      transform: rotate(-45deg);
+
+      &::before {
+        background-color: map-get($colors, accent-light);
+        content: "";
+        width: 40px;
+        height: 3px;
+        bottom: 12px;
+        position: absolute;
+        transform: rotate(270deg) translate(-12px);
+      }
+    }
+  }
+}
+
+
+.scroll-down .c-nav {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .c-nav {
+  box-shadow: 0 -10px 30px rgba(97, 97, 97, 0.7);
+}
+
+.-visible {
+  display: block;
+}
