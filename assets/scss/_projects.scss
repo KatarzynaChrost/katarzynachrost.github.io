@@ -27,7 +27,7 @@
       img {
         max-width: 100%;
         height: auto;
-        border-radius: 5%;
+        border-radius: 20px;
         border-bottom: 5px solid map-get($colors, accent);
         cursor: pointer;
         &:hover{
