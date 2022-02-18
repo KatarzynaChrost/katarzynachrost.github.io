@@ -7,7 +7,6 @@
   <title>Portfolio</title>
   <meta name="description" content="Zapraszam do zapoznania się z moim portfolio!" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./app.min.css" />
   <meta property=”og:title” content=”Katarzyna Chróst - junior Frontend Developer” />
   <meta property="og:url" content="https://katarzynachrost.github.io" />
   <meta property=”og:type” content=”website” />
@@ -25,17 +24,17 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <link href="favicon.ico" rel="shortcut icon" type="images/vnd.microsoft.icon">
   <meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
-  <script src="./assets/js/app.js" async defer></script>
   <nav class="c-nav">
-    <a href="https://katarzynachrost.github.io"><div class="c-nav_logo">KC</div></a>
+    <a href="https://katarzynachrost.github.io">
+      <div class="c-nav_logo">KC</div>
+    </a>
     <ul class="c-nav_list">
       <li><a href="#o-mnie">o mnie </a></li>
       <li><a href="#projekty">projekty</a></li>
@@ -58,7 +57,6 @@
     </div>
   </div>
   <div class="blank"></div>
-
   </div>
   <section class="c-main">
     <div class="c-main_card">
@@ -74,41 +72,75 @@
   </section>
   <section id="o-mnie" class="c-about">
     <h2 class="c-about_title">O mnie</h2>
-    <p>Witaj w moim portfolio. Mam 22 lata, mieszkam w Warszawie, gdzie studiuję zaocznie na SGH, na kierunku e-biznes. Od kilku miesięcy
+    <p>Witaj w moim portfolio. Mam 22 lata, mieszkam w Warszawie, gdzie studiuję zaocznie na SGH, na kierunku e-biznes.
+      Od kilku miesięcy
       poznaję technologie związane ze stanowiskiem frontend developera. Szukam pracy lub stażu który pozwoli mi rozwijać
       się dalej w tym kierunku.</p>
   </section>
   <section id="projekty" class="c-projects">
+    <div class="relative">
     <h2 class="c-projects_title">Moje projekty</h2>
-    <div class="c-projects_card">
-      <a href="https://katarzynachrost.github.io"><img src="./assets/img/portfolio.png"></a>
-      <div class="c-projects_card_title">Moje portfolio</div>
-      <div class="c-projects_card_btn"><a href="https://github.com/KatarzynaChrost/katarzynachrost.github.io" target="_blank">kod<i class="icon-code"></i></a></div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="c-projects_card">
+            <a href="https://katarzynachrost.github.io"><img src="./assets/img/projects/portfolio.png"></a>
+            <div class="c-projects_card_title">Moje portfolio</div>
+            <div class="c-projects_card_btn"><a href="https://github.com/KatarzynaChrost/katarzynachrost.github.io"
+                target="_blank">kod<i class="icon-code"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="c-projects_card">
+            <a href="https://katarzynachrost.github.io/Calculator/" target="_blank"><img
+                src="./assets/img/projects/calculator.png"></a>
+            <div class="c-projects_card_title">Calculator</div>
+            <div class="c-projects_card_btn"><a href="https://github.com/KatarzynaChrost/Calculator"
+                target="_blank">kod<i class="icon-code"></a></i></div>
+            <div class="c-projects_card_btn"><a href="https://katarzynachrost.github.io/Calculator/"
+                target="_blank">live</i><i class="icon-export"></i></a></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="c-projects_card">
+            <a href="https://katarzynachrost.github.io/accordion/" target="_blank"><img
+                src="./assets/img/projects/accordion.png"></a>
+            <div class="c-projects_card_title">Accordion</div>
+            <div class="c-projects_card_btn"><a href="https://github.com/KatarzynaChrost/accordion"
+                target="_blank">kod<i class="icon-code"></a></i></div>
+            <div class="c-projects_card_btn"><a href="https://katarzynachrost.github.io/accordion/"
+                target="_blank">live</i><i class="icon-export"></i></a></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="c-projects_card">
+            <a href="https://katarzynachrost.github.io/github-users-repos-search/" target="_blank"><img
+                src="./assets/img/projects/github-users-repos-search.png"></a>
+            <div class="c-projects_card_title">Github users repos search</div>
+            <div class="c-projects_card_btn"><a href="https://github.com/KatarzynaChrost/github-users-repos-search"
+                target="_blank">kod<i class="icon-code"></a></i></div>
+            <div class="c-projects_card_btn"><a href="https://katarzynachrost.github.io/github-users-repos-search/"
+                target="_blank">live</i><i class="icon-export"></i></a></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="c-projects_card">
+            <a href="https://katarzynachrost.github.io/odwzorowanieStrony/" target="_blank"><img
+                src="./assets/img/projects/odwzorowanie.png"></a>
+            <div class="c-projects_card_title">Odwzorowanie istniejącej strony - pierwszy projekt</div>
+            <div class="c-projects_card_btn"><a href="https://github.com/KatarzynaChrost/odwzorowanieStrony"
+                target="_blank">kod<i class="icon-code"></i></a></div>
+            <div class="c-projects_card_btn"><a href="https://katarzynachrost.github.io/odwzorowanieStrony/"
+                target="_blank">live</i><i class="icon-export"></a></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="c-projects_card">
-      <a href="https://katarzynachrost.github.io/Calculator/" target="_blank"><img src="./assets/img/calculator.png"></a>
-      <div class="c-projects_card_title">Calculator</div>
-      <div class="c-projects_card_btn"><a href="https://github.com/KatarzynaChrost/Calculator" target="_blank">kod<i class="icon-code"></a></i></div>
-      <div class="c-projects_card_btn"><a href="https://katarzynachrost.github.io/Calculator/" target="_blank">live</i><i class="icon-export"></i></a></div>
-    </div>
-    <div class="c-projects_card">
-      <a href="https://katarzynachrost.github.io/odwzorowanieStrony/" target="_blank"><img src="./assets/img/odwzorowanie.png"></a>
-      <div class="c-projects_card_title">Odwzorowanie istniejącej strony - pierwszy projekt</div>
-      <div class="c-projects_card_btn"><a href="https://github.com/KatarzynaChrost/odwzorowanieStrony" target="_blank">kod<i class="icon-code"></i></a></div>
-      <div class="c-projects_card_btn"><a href="https://katarzynachrost.github.io/odwzorowanieStrony/" target="_blank">live</i><i class="icon-export"></a></i></div>
-    </div>
-    <div class="c-projects_card">
-      <a href="https://katarzynachrost.github.io/accordion/" target="_blank"><img src="./assets/img/accordion.png"></a>
-      <div class="c-projects_card_title">Accordion</div>
-      <div class="c-projects_card_btn"><a href="https://github.com/KatarzynaChrost/accordion" target="_blank">kod<i class="icon-code"></a></i></div>
-      <div class="c-projects_card_btn"><a href="https://katarzynachrost.github.io/accordion/" target="_blank">live</i><i class="icon-export"></i></a></div>
-    </div>
-    <div class="c-projects_card">
-      <a href="https://katarzynachrost.github.io/github-users-repos-search/" target="_blank"><img src="./assets/img/github-users-repos-search.png"></a>
-      <div class="c-projects_card_title">Github users repos search</div>
-      <div class="c-projects_card_btn"><a href="https://github.com/KatarzynaChrost/github-users-repos-search" target="_blank">kod<i class="icon-code"></a></i></div>
-      <div class="c-projects_card_btn"><a href="https://katarzynachrost.github.io/github-users-repos-search/" target="_blank">live</i><i class="icon-export"></i></a></div>
-    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
   </section>
   <section id="umiejętności" class="c-skills">
     <h2 class="c-skills_title">Umiejętności</h2>
@@ -145,6 +177,7 @@
       <p>799 823 232</p>
     </div>
   </footer>
+  <script src="dist/app.js"></script>
 </body>
 
 </html>

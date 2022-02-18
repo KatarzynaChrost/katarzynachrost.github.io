@@ -1,7 +1,7 @@
 
 .c-main {
     position: relative;
-    background-image: url("assets/img/svg/blob.svg");
+    background-image: url("../img/blobs/blob.svg");
     background-repeat: no-repeat;
     background-size: 1000px;
     background-position: calc(50% + 360px) 59%;
@@ -12,7 +12,7 @@
       height: 750px;
     }
     &_my_photo {
-      background-image: url("assets/img/my_photo.jpg");
+      background-image: url("../img/my_photo.jpg");
       clip-path: circle(31.5% at 50% 36%);
       width: 360px;
       height: 722px;
