@@ -29,12 +29,12 @@ const Header = () => {
               </span>
             </h1>
             <div className="flex gap-6 font-semibold flex-col sm:flex-row">
-              <Button>
-                <Link href={"#contact_me"}>Get in touch</Link>
-              </Button>
-              <Button outline>
-                <Link href={"#projects"}>See my work</Link>
-              </Button>
+              <Link href={"#contact_me"}>
+                <Button>Get in touch</Button>
+              </Link>
+              <Link href={"#projects"}>
+                <Button outline>See my work</Button>
+              </Link>
             </div>
           </div>
           <Image
