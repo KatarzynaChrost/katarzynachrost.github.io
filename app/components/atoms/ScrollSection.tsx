@@ -25,8 +25,8 @@ const ScrollSection = ({ withoutContainer, children }: IScrollSectionProps) => {
 
     tl.fromTo(
       elementRef.current,
-      { opacity: 0, left: "-10%" },
-      { opacity: 1, left: 0, duration: 2 }
+      { opacity: 0, transform: "translateX(-10%)" },
+      { opacity: 1, transform: "translateX(0)", duration: 2 }
     );
 
     return () => {

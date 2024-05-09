@@ -13,9 +13,9 @@ const Navigation = () => {
   const genericHamburgerLine = `h-1 w-7 my-1 rounded-full bg-zinc-100 transition ease duration-300`;
 
   return (
-    <nav className="bg-zinc-900">
-      <div className="mainContainer relative">
-        <div className="flex justify-between items-center text-lg py-4 gap-5">
+    <nav className="bg-zinc-900 relative z-10">
+      <div className="mainContainer bg-zinc-900 relative">
+        <div className="flex justify-between items-center text-lg py-4 gap-5 relative z-10">
           <Link className="pr-4 font-bold text-3xl" href="/">
             <span className="font-black gradient-text">x</span>Kate
           </Link>
@@ -62,8 +62,8 @@ const Navigation = () => {
         </div>
         <div
           className={clsx(
-            "xl:hidden absolute bg-zinc-900 px-8 pb-10 right-[-20px] text-right transition-[top] ease duration-300 z-[-1]",
-            isSideMenuVisible ? "top-20" : "top-[-270px]"
+            "xl:hidden absolute top-full bg-zinc-900 px-8 pb-10 -right-5 text-right transition-transform ease duration-300 -z-[1]",
+            isSideMenuVisible ? "translate-y-0" : "-translate-y-full"
           )}
         >
           <div className="mb-2">

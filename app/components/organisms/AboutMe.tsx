@@ -32,9 +32,9 @@ const AboutMe = () => {
               For the past <b>3 years</b>, I've been immersed in the world of
               programming, with the last
               <b> 2 years dedicated to commercial React</b> development.
-              <br /> <br /> Currently, I'm deepening my knowledge of{" "}
-              <b>Next.js</b>. Illustratively, I'm actively engaged in crafting
-              this portfolio website leveraging this framework.
+              <br /> <br /> Currently, I'm deepening my expertise in{" "}
+              <b>Next.js</b>. As a tangible demonstration, I've developed this
+              portfolio website utilizing the capabilities of this framework.
               <br /> <br />
               I'm thrilled at the prospect of joining a team where I can
               leverage my skills and embrace fresh challenges.

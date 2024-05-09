@@ -1,14 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import ScrollSection from "../atoms/ScrollSection";
 import SectionTitle from "../atoms/SectionTitle";
 import TechCloud from "../atoms/TechCloud";
 import { technologies } from "@/app/data/data";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const TechStack = () => {
   return (
     <section id="tech_stack" className="bg-gradient">
       <ScrollSection>
-        <div className="flex 2xl:flex-row flex-col gap-2 items-center py-20 overflow-hidden">
+        <div className="2xl:flex gap-2 items-center py-20 overflow-hidden">
           <div>
             <SectionTitle>
               <div className="flex items-center flex-row sm:gap-4 gap-1">
@@ -34,13 +38,42 @@ const TechStack = () => {
           </div>
           <TechCloud />
           <div className="block sm:hidden mt-6">
-            <div className="carousel-track overflow-clip">
+            <Swiper
+              modules={[Autoplay]}
+              autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
+              }}
+              spaceBetween={12}
+              slidesPerView="auto"
+              speed={5000}
+              loop={true}
+              // breakpoints={{
+              //   0: {
+              //     slidesPerView: 1,
+              //     spaceBetween: 20,
+              //   },
+              //   1100: {
+              //     slidesPerView: 2,
+              //     spaceBetween: 40,
+              //   },
+              // }}
+            >
+              {technologies.map((tech) => (
+                <SwiperSlide className="!w-auto">
+                  <div className="bg-zinc-900 h-fit rounded-lg px-4 text-lg py-2">
+                    {tech}
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* <div className="carousel-track">
               {technologies.map((tech) => (
                 <div className="bg-zinc-900 h-fit rounded-lg px-4 text-lg py-2">
                   {tech}
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </ScrollSection>

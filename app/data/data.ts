@@ -40,14 +40,14 @@ export const technologies = [
 export const projectsData = [
   {
     id: 1,
-    title: "Medical Knowledge Management Portal for Polish University",
-    duration: "05.2022 - 10.2022",
-    role: "Intern/Junior Frontend Developer",
+    title: "Knowledge and Research Potential Management Portal",
+    duration: "06.2023 - 04.2024",
+    role: "Frontend Developer",
     description:
-      "The platform empowers users to seamlessly search, download, and upload medical terms in their original and translated forms. It provides a range of user roles, enabling some to suggest new translations, review submissions for approval, and request revisions as needed. Additionally, the system preserves historical versions of terms from each year. It ensures compliance with accessibility standards.",
-    technologies: ["React", "Gatsby", "TypeScript", "Antd"],
-    img: "/meshpol.webp",
-    link: "https://mesh.cm-uj.krakow.pl/",
+      "Knowledge Base System that enables management of scientific information and research potential, contributing to the institution's reputation and visibility. The system allows for the indexing and sharing of publications, research data, and other scholarly achievements, while also facilitating the organization of academic institution-related activities. It ensures compliance with accessibility standards.",
+    technologies: ["React", "TypeScript", "Antd"],
+    img: "/omega.webp",
+    link: "https://repo.pw.edu.pl/index.seam",
   },
   {
     id: 2,
@@ -62,14 +62,14 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "Knowledge and Research Potential Management Portal",
-    duration: "06.2023 - 04.2024",
-    role: "Frontend Developer",
+    title: "Medical Knowledge Management Portal for Polish University",
+    duration: "05.2022 - 10.2022",
+    role: "Intern/Junior Frontend Developer",
     description:
-      "Knowledge Base System that enables management of scientific information and research potential, contributing to the institution's reputation and visibility. The system allows for the indexing and sharing of publications, research data, and other scholarly achievements, while also facilitating the organization of academic institution-related activities. It ensures compliance with accessibility standards.",
-    technologies: ["React", "TypeScript", "Antd"],
-    img: "/omega.webp",
-    link: "https://repo.pw.edu.pl/index.seam",
+      "The platform empowers users to seamlessly search, download, and upload medical terms in their original and translated forms. It provides a range of user roles, enabling some to suggest new translations, review submissions for approval, and request revisions as needed. Additionally, the system preserves historical versions of terms from each year. It ensures compliance with accessibility standards.",
+    technologies: ["React", "Gatsby", "TypeScript", "Antd"],
+    img: "/meshpol.webp",
+    link: "https://mesh.cm-uj.krakow.pl/",
   },
 ];
 

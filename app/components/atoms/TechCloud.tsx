@@ -21,7 +21,7 @@ const TechCloud = () => {
   }, []);
 
   return (
-    <div className="font-bold hidden sm:block text-2xl min-h-[600px] min-w-[600px]">
+    <div className="font-bold hidden sm:table mx-auto text-2xl min-h-[600px] min-w-[600px]">
       <span
         ref={tagCloudRef}
         className="block overflow-hidden max-h-[600px] max-w-[600px]"
