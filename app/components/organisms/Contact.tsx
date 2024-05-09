@@ -34,7 +34,6 @@ const Contact = () => {
                   >
                     <LinkedInIcon
                       className="hover:fill-[#0e76a8] fill-[#FAF9F6] transition-colors"
-                      alt="LinkedIn icon"
                       width={40}
                       height={40}
                     />
@@ -42,7 +41,6 @@ const Contact = () => {
                   <a target="_blank" href="https://github.com/KatarzynaChrost">
                     <GithubIcon
                       className="hover:fill-[#6e5494] fill-[#FAF9F6] transition-colors"
-                      alt="Github icon"
                       width={40}
                       height={40}
                     />

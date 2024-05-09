@@ -4,7 +4,7 @@ import Link from "next/link";
 import Button from "../atoms/Button";
 import SectionTitle from "../atoms/SectionTitle";
 import clsx from "clsx";
-import { projectsData } from "../data/data";
+import { projectsData } from "@/app/data/data";
 
 const Projects = () => {
   const isEven = (id: number) => {

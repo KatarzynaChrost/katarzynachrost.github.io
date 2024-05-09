@@ -5,7 +5,7 @@ import Button from "../atoms/Button";
 import { useToggle } from "usehooks-ts";
 import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
-import { navItems } from "../data/data";
+import { navItems } from "@/app/data/data";
 
 const Navigation = () => {
   const [isSideMenuVisible, toggleSideMenuVisibility] = useToggle();

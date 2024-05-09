@@ -2,7 +2,7 @@ import Image from "next/image";
 import ScrollSection from "../atoms/ScrollSection";
 import SectionTitle from "../atoms/SectionTitle";
 import TechCloud from "../atoms/TechCloud";
-import { technologies } from "../data/data";
+import { technologies } from "@/app/data/data";
 
 const TechStack = () => {
   return (
@@ -17,6 +17,7 @@ const TechStack = () => {
                   alt="Tech stack"
                   width={60}
                   height={60}
+                  unoptimized
                 />
                 Tech stack
               </div>

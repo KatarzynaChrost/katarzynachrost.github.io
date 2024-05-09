@@ -9,7 +9,8 @@ import { Autoplay, Pagination } from "swiper/modules";
 import LinkedInIcon from "@/app/svgr/linkedIn";
 import SectionTitle from "../atoms/SectionTitle";
 import Link from "next/link";
-import { referralsData } from "../data/data";
+import { referralsData } from "@/app/data/data";
+import { CSSProperties } from "react";
 
 const Referrals = () => {
   return (
@@ -38,13 +39,15 @@ const Referrals = () => {
               spaceBetween: 40,
             },
           }}
-          style={{
-            "--swiper-pagination-color": "#FFFFFF",
-            "--swiper-pagination-bullet-inactive-color": "#71717a",
-            "--swiper-pagination-bullet-inactive-opacity": "1",
-            "--swiper-pagination-bullet-size": "1rem",
-            "--swiper-pagination-bullet-horizontal-gap": "0.5rem",
-          }}
+          style={
+            {
+              "--swiper-pagination-color": "#FFFFFF",
+              "--swiper-pagination-bullet-inactive-color": "#71717a",
+              "--swiper-pagination-bullet-inactive-opacity": "1",
+              "--swiper-pagination-bullet-size": "1rem",
+              "--swiper-pagination-bullet-horizontal-gap": "0.5rem",
+            } as CSSProperties
+          }
         >
           {referralsData.map((rec, index) => (
             <SwiperSlide key={index}>
@@ -65,12 +68,7 @@ const Referrals = () => {
                     className="hover:text-[#0e76a8] hover:fill-[#0e76a8] fill-[#FAF9F6] text-lg transition-colors cursor-pointer flex items-center justify-end"
                   >
                     ~ {rec.name}
-                    <LinkedInIcon
-                      className="ml-1"
-                      alt="LinkedIn icon"
-                      width={25}
-                      height={25}
-                    />
+                    <LinkedInIcon className="ml-1" width={25} height={25} />
                   </Link>
                   <p className="text-sm text-zinc-500 min-h-14">
                     {rec.position}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navItems } from "../data/data";
+import { navItems } from "@/app/data/data";
 
 const Footer = () => {
   return (
