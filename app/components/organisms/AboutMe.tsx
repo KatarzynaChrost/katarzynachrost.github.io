@@ -3,7 +3,6 @@ import SectionTitle from "../atoms/SectionTitle";
 import Button from "../atoms/Button";
 import { Parisienne } from "next/font/google";
 import { Outfit } from "next/font/google";
-import Link from "next/link";
 
 const handwriting = Parisienne({
   weight: ["400"],
@@ -13,7 +12,7 @@ const outfit = Outfit({ weight: ["800"], subsets: ["latin"] });
 
 const AboutMe = () => {
   return (
-    <section id="about_me" className="my-40 relative pt-28">
+    <section id="about_me" className="my-40 relative pt-8 md:pt-20">
       <p
         className={`gradient-text absolute text-shadow-lg ${outfit.className} text-[1200px] leading-none bottom-[-20vw] right-[0] z-[0] block lg:hidden`}
       >
