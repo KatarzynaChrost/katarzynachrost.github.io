@@ -23,7 +23,7 @@ export const navItems = [
 
 export const technologies = [
   "React",
-  "Next",
+  "Next.js",
   "Antd",
   "Tailwind",
   "ChakraUI",

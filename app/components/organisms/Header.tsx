@@ -8,7 +8,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <section id="/">
-      <div className="mainContainer lg:h-[85vh] 2xl:h-[unset] pt-24 md:pt-40 lg:pt-80 2xl:pt-64 z-[-2]">
+      <div className="mainContainer pt-24 md:pt-40 lg:pt-80 2xl:pt-64">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-[auto,400px] gap-4 justify-between">
           <div className="my-auto">
             <h1 className="text-5xl lg:mt-8 md:text-6xl font-bold leading-none mb-16 lg:mb-4 mt-[-190px] bg-opacity-40 bg-zinc-900 backdrop-blur-md lg:bg-opacity-0 rounded-2xl px-2 lg:px-0">
@@ -29,10 +29,10 @@ const Header = () => {
               </span>
             </h1>
             <div className="flex gap-6 font-semibold flex-col sm:flex-row">
-              <Link href={"#contact_me"}>
+              <Link href={"#contact_me"} className="w-full sm:w-auto">
                 <Button>Get in touch</Button>
               </Link>
-              <Link href={"#projects"}>
+              <Link href={"#projects"} className="w-full sm:w-auto">
                 <Button outline>See my work</Button>
               </Link>
             </div>
@@ -40,10 +40,10 @@ const Header = () => {
           <Image
             src="/katarzyna_chrost.webp"
             alt="Katarzyna Chróst Photo"
-            width={400}
+            width={430}
             height={750}
             priority
-            className="mx-auto w-[260px] md:w-[300px] xl:w-[360px] 2xl:w-[400px]"
+            className="mx-auto w-[260px] md:w-[300px] xl:w-[360px] 2xl:w-[400px] 3xl:w-[430px]"
           />
         </div>
       </div>

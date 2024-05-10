@@ -13,7 +13,7 @@ const Navigation = () => {
   const genericHamburgerLine = `h-1 w-7 my-1 rounded-full bg-zinc-100 transition ease duration-300`;
 
   return (
-    <nav className="bg-zinc-900 relative z-10">
+    <nav className="bg-zinc-900 relative z-10 2xl:py-2">
       <div className="mainContainer bg-zinc-900 relative">
         <div className="flex justify-between items-center text-lg py-4 gap-5 relative z-10">
           <Link className="pr-4 font-bold text-3xl" href="/">
