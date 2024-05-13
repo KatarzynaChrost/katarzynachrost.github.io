@@ -21,11 +21,6 @@ export const navItems: INavItem[] = [
     name: "Referrals",
     link: "#referrals",
   },
-  {
-    id: 5,
-    name: "CV",
-    link: "/CV.pdf",
-  },
 ];
 
 export const technologies: string[] = [
