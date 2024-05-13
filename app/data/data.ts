@@ -1,4 +1,6 @@
-export const navItems = [
+import { INavItem, IProject, IReferral } from "../types/data";
+
+export const navItems: INavItem[] = [
   {
     id: 1,
     name: "About me",
@@ -19,9 +21,14 @@ export const navItems = [
     name: "Referrals",
     link: "#referrals",
   },
+  {
+    id: 5,
+    name: "CV",
+    link: "/CV.pdf",
+  },
 ];
 
-export const technologies = [
+export const technologies: string[] = [
   "React",
   "Next.js",
   "Antd",
@@ -37,7 +44,7 @@ export const technologies = [
   "D3.js",
 ];
 
-export const projectsData = [
+export const projectsData: IProject[] = [
   {
     id: 1,
     title: "Knowledge and Research Potential Management Portal",
@@ -73,7 +80,7 @@ export const projectsData = [
   },
 ];
 
-export const referralsData = [
+export const referralsData: IReferral[] = [
   {
     id: 1,
     name: "Mikołaj Sykuła",

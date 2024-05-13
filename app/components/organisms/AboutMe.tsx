@@ -12,7 +12,7 @@ const outfit = Outfit({ weight: ["800"], subsets: ["latin"] });
 
 const AboutMe = () => {
   return (
-    <section id="about_me" className="my-40 relative pt-8 md:pt-20">
+    <section id="about_me" className="my-40 sm:pt-8 relative md:pt-20">
       <p
         className={`gradient-text absolute text-shadow-lg ${outfit.className} text-[1200px] leading-none bottom-[-20vw] right-[0] z-[0] block lg:hidden`}
       >
