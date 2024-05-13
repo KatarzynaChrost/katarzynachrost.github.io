@@ -46,18 +46,8 @@ const TechStack = () => {
               }}
               spaceBetween={12}
               slidesPerView="auto"
-              speed={5000}
+              speed={1200}
               loop={true}
-              // breakpoints={{
-              //   0: {
-              //     slidesPerView: 1,
-              //     spaceBetween: 20,
-              //   },
-              //   1100: {
-              //     slidesPerView: 2,
-              //     spaceBetween: 40,
-              //   },
-              // }}
             >
               {technologies.map((tech) => (
                 <SwiperSlide className="!w-auto">
@@ -67,13 +57,6 @@ const TechStack = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            {/* <div className="carousel-track">
-              {technologies.map((tech) => (
-                <div className="bg-zinc-900 h-fit rounded-lg px-4 text-lg py-2">
-                  {tech}
-                </div>
-              ))}
-            </div> */}
           </div>
         </div>
       </ScrollSection>
