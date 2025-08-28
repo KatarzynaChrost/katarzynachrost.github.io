@@ -11,7 +11,8 @@
   --gradient-trans-end-rgb: 255, 145, 53, 0.45;
 }
 
-*, html {
+*,
+html {
   scroll-behavior: smooth !important;
 }
 
@@ -31,37 +32,57 @@ body {
     text-wrap: balance;
   }
 
-  .gradient-text{
+  .gradient-text {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(to right, rgb(var(--gradient-start-rgb)), rgb(var(--gradient-end-rgb)));
+    background-image: linear-gradient(
+      to right,
+      rgb(var(--gradient-start-rgb)),
+      rgb(var(--gradient-end-rgb))
+    );
   }
 }
 
 @layer components {
   .bg-radial-gradient {
-    background-image: radial-gradient(circle, rgb(var(--gradient-start-rgb)) 0%, rgb(var(--gradient-end-rgb)) 100%);
+    background-image: radial-gradient(
+      circle,
+      rgb(var(--gradient-start-rgb)) 0%,
+      rgb(var(--gradient-end-rgb)) 100%
+    );
     background-position: right center;
     background-size: 200% 100%;
-    &:hover{
+    &:hover {
       background-position: left center;
     }
   }
-  .border-gradient{
-    &::after{
+  .border-gradient {
+    &::after {
       @apply rounded-md absolute content-[""] top-[2px] left-[2px] right-[2px] bottom-[2px];
       background: rgb(var(--background-rgb));
     }
   }
-  .bg-gradient{
-    background-image: linear-gradient(to right, rgb(var(--gradient-trans-start-rgb)), rgb(var(--gradient-trans-end-rgb)));
+  .bg-full-gradient {
+    background-image: linear-gradient(
+      to right,
+      rgb(var(--gradient-start-rgb)),
+      rgb(var(--gradient-end-rgb))
+    );
+    &:focus-visible {
+      @apply border-0
+/* TODO */;
+    }
   }
-  .bg-basic{
+  .bg-gradient {
+    background-image: linear-gradient(
+      to right,
+      rgb(var(--gradient-trans-start-rgb)),
+      rgb(var(--gradient-trans-end-rgb))
+    );
+  }
+  .bg-basic {
     background-color: rgb(var(--background-rgb));
   }
-  .input-border{
-    @apply mt-1 p-3 w-full bg-inherit rounded-lg outline-none border border-zinc-400
+  .input-border {
+    @apply mt-1 p-3 w-full bg-inherit rounded-lg outline-none border border-zinc-400;
   }
 }
-
-
-

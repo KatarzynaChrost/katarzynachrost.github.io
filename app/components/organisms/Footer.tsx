@@ -13,7 +13,11 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-          <a className="sm:pl-8 w-fit sm:py-8" download href={"/CV.pdf"}>
+          <a
+            className="sm:pl-8 w-fit sm:py-8"
+            download
+            href={"/The_Best_React_Dev_4_Years_Of_Exp.pdf"}
+          >
             Download CV
           </a>
         </div>

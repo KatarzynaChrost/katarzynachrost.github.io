@@ -1,10 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import ScrollSection from "../atoms/ScrollSection";
 import Link from "next/link";
 import Button from "../atoms/Button";
 import SectionTitle from "../atoms/SectionTitle";
 import clsx from "clsx";
-import { projectsData } from "@/app/data/data";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { commercialProjectsData } from "@/app/data/data";
+import "react-tabs/style/react-tabs.css";
 
 const Projects = () => {
   const isEven = (id: number) => {
@@ -15,13 +19,31 @@ const Projects = () => {
     <section id="projects">
       <ScrollSection>
         <SectionTitle>Projects</SectionTitle>
-        {projectsData.map((project) => (
+        {/* <Tabs className="switch-tabs">
+          <TabList className="flex bg-zinc-900 p-2 rounded-full w-max mx-auto my-4 text-xl font-semibold">
+            <Tab
+              className="cursor-pointer py-3 px-5 rounded-full transition-colors duration-200 ease-in-out"
+              selectedClassName="bg-full-gradient"
+            >
+              Commercial
+            </Tab>
+            <Tab
+              className="cursor-pointer py-3 px-5 rounded-full transition-colors duration-200 ease-in-out"
+              selectedClassName="bg-full-gradient"
+            >
+              Personal
+            </Tab>
+          </TabList> */}
+        {/* <TabPanel> */}
+        {commercialProjectsData.map((project) => (
           <div className="py-20">
             <ScrollSection withoutContainer>
               <div
                 className={clsx(
                   "flex gap-8 flex-col",
-                  { "2xl:flex-row-reverse 2xl:text-right": isEven(project.id) },
+                  {
+                    "2xl:flex-row-reverse 2xl:text-right": isEven(project.id),
+                  },
                   "2xl:flex-row items-center w-full"
                 )}
               >
@@ -70,6 +92,11 @@ const Projects = () => {
             </ScrollSection>
           </div>
         ))}
+        {/* </TabPanel> */}
+        {/* <TabPanel> */}
+        {/* <h2>Personal projects</h2> */}
+        {/* </TabPanel> */}
+        {/* </Tabs> */}
       </ScrollSection>
     </section>
   );

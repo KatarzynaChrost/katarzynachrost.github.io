@@ -39,7 +39,7 @@ export const technologies: string[] = [
   "D3.js",
 ];
 
-export const projectsData: IProject[] = [
+export const commercialProjectsData: IProject[] = [
   {
     id: 1,
     title: "Knowledge and Research Potential Management Portal",
@@ -74,6 +74,17 @@ export const projectsData: IProject[] = [
     link: "https://mesh.cm-uj.krakow.pl/",
   },
 ];
+
+export const personalProjectsData = [
+    {
+    id: 1,
+    title: "My portfolio website",
+    description: "Portolio jakie jest każdy widzi",
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind"],
+    img: "/meshpol.webp",
+    link: "/",
+  },
+]
 
 export const referralsData: IReferral[] = [
   {
