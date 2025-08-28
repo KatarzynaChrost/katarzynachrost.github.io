@@ -16,13 +16,13 @@ const AboutMe = () => {
       <p
         className={`gradient-text absolute text-shadow-lg ${outfit.className} text-[1200px] leading-none bottom-[-20vw] right-[0] z-[0] block lg:hidden`}
       >
-        3
+        4
       </p>
       <ScrollSection>
         <div className="xl:py-20 py-16 xl:px-10 px-7 bg-zinc-900 rounded-3xl z-0">
           <div className="lg:ml-[42%] relative z-0">
             <p
-              className={`gradient-text absolute text-shadow-md ${outfit.className} text-[1500px] lg:text-[850px] xl:text-[1050px] top-[-820px] lg:top-[-370px] xl:top-[-550px] xl:left-[-600px] lg:left-[-480px] left-[-100px] z-[-10] lg:z-[10] hidden lg:block`}
+              className={`gradient-text absolute text-shadow-md ${outfit.className} text-[1500px] lg:text-[850px] xl:text-[1050px] top-[-820px] lg:top-[-370px] xl:top-[-550px] xl:left-[-680px] lg:left-[-520px] left-[-100px] z-[-10] lg:z-[10] hidden lg:block`}
             >
               4
             </p>
